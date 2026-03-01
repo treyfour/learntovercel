@@ -43,10 +43,11 @@ export default function Work() {
   return (
     <div className="px-6 py-24">
       <div className="mx-auto max-w-5xl">
-        <h1 className="mb-16 text-4xl font-semibold tracking-tight text-zinc-900">
+        <p className="mb-3 text-xs tracking-widest uppercase text-accent">Selected Work</p>
+        <h1 className="mb-16 text-4xl font-light tracking-tight text-foreground">
           Work
         </h1>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-px sm:grid-cols-2 lg:grid-cols-3 border border-border">
           {projects.map((project) => (
             <ProjectCard key={project.name} {...project} />
           ))}

@@ -6,16 +6,16 @@ type ProjectCardProps = {
 
 export default function ProjectCard({ name, description, tags }: ProjectCardProps) {
   return (
-    <div className="group overflow-hidden rounded-lg border border-zinc-100 transition-colors hover:border-zinc-300">
-      <div className="h-48 w-full bg-zinc-50 transition-colors group-hover:bg-zinc-100" />
-      <div className="p-5">
-        <h3 className="mb-1 font-medium text-zinc-900">{name}</h3>
-        <p className="mb-4 text-sm leading-relaxed text-zinc-500">{description}</p>
+    <div className="group border border-border transition-colors duration-300 hover:border-secondary">
+      <div className="h-48 w-full bg-surface transition-colors duration-300 group-hover:bg-[var(--surface-hover)]" />
+      <div className="p-5 border-t border-border">
+        <h3 className="mb-1 text-sm font-medium text-foreground">{name}</h3>
+        <p className="mb-4 text-xs leading-relaxed text-secondary font-light">{description}</p>
         <div className="flex flex-wrap gap-2">
           {tags.map((tag) => (
             <span
               key={tag}
-              className="rounded border border-zinc-200 px-2 py-0.5 text-xs text-zinc-400"
+              className="border border-border px-2 py-0.5 text-[10px] tracking-widest uppercase text-dim"
             >
               {tag}
             </span>
