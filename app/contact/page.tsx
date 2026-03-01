@@ -11,13 +11,7 @@ export default function Contact() {
           collaborations. The best way to reach me is by email.
         </p>
         <div className="space-y-4">
-          <a
-            href="mailto:hello@trevor.com"
-            className="block text-2xl font-light text-foreground transition-colors duration-300 hover:text-accent"
-          >
-            hello@trevor.com
-          </a>
-          <div className="flex gap-8 pt-8 border-t border-border">
+          <div className="flex gap-8 border-t border-border pt-8">
             <a
               href="https://github.com"
               className="text-xs tracking-widest uppercase text-secondary transition-colors duration-300 hover:text-foreground"
@@ -42,3 +36,4 @@ export default function Contact() {
     </div>
   );
 }
+
